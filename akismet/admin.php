@@ -4,7 +4,7 @@ add_action( 'admin_menu', 'akismet_admin_menu' );
 akismet_admin_warnings();
 
 function akismet_admin_init() {
-    global $wp_version;
+    global $wp_version , $thisismaster , $mastertofork; 
     
     // all admin functions are disabled in old versions
     if ( !function_exists('is_multisite') && version_compare( $wp_version, '3.0', '<' ) ) {
