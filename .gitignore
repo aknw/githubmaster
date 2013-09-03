@@ -1,0 +1,4 @@
+*.bak
+backups/
+*.tmp
+*.log
